@@ -4,7 +4,7 @@ describe('Subscribe User Form', () => {
         cy.visit('http://localhost:3000')
     }
     )
-
+    context('Subscribing', () => {
     it('allows user to subscribe to newsletter', () => {
 
         cy.getByData('email-input').type('tom@aol.com')
@@ -20,7 +20,7 @@ describe('Subscribe User Form', () => {
         cy.getByData('success-message').should('not.exist')
 
     })
-
+    })
 
 
 
