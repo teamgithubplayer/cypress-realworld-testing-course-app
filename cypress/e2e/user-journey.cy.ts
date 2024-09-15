@@ -20,6 +20,8 @@ describe('User-Journey', () => {
             cy.getByData("challenge-answer-0").click()
             cy.getByData("next-lesson-button").click()
             cy.location("pathname").should("equal", '/')
+            // testing
+            // testing 123
         })
         
 
