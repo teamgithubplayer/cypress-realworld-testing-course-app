@@ -1,4 +1,4 @@
-describe('homepage', () => {
+describe('Homepage', () => {
  beforeEach(()=>{
   cy.visit('http://localhost:3000/')
 
@@ -16,6 +16,16 @@ context("Hero Section", ()=>{
     cy.get("dt").eq(2).contains("Free and Open Source")
   
   })
+  })
+
+
+  context("Courses Section", ()=> {
+
+it.only("Course: Testing your first Next.js Application", ()=>{
+  cy.getByData("course-0").find("a").contains("Get started").click()
+})
+
+
   })
 })
 
