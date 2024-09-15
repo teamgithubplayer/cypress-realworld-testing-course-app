@@ -32,10 +32,11 @@ cy.getByData("course-1").find("a").contains("Get started").click()
 cy.location("pathname").should("equal", "/testing-foundations")
 })
 
-// it.only("Course: Testing your first Next.js Application", ()=>{
-//   cy.getByData("course-0").find("a").contains("Get started").click()
-//   cy.location("pathname").should("equal", "/testing-your-first-application")
-// })
+it.only("Course: Cypress Fundamentals", ()=>{
+  cy.getByData("course-2").find("a").contains("Get started").click()
+  cy.location("pathname").should("equal", "/cypress-fundamentals")
+
+})
 
   })
 
