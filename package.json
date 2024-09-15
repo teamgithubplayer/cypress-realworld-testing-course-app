@@ -28,12 +28,15 @@
     "xstate": "^4.30.5"
   },
   "devDependencies": {
+    "@playwright/test": "^1.47.0",
     "@types/chai": "^4.3.0",
     "@types/lodash": "^4.14.179",
     "@types/mocha": "^9.1.0",
+    "@types/node": "^22.5.4",
     "@types/react": "^17.0.39",
     "autoprefixer": "^10.4.2",
     "chai": "^4.3.6",
+    "cypress": "^13.14.0",
     "eslint": "^8.10.0",
     "eslint-config-next": "^12.1.0",
     "eslint-config-prettier": "^8.5.0",
