@@ -11,6 +11,10 @@ describe('User-Journey', () => {
             cy.location("pathname").should("equal", "/testing-your-first-application")
             cy.getByData("next-lesson-button").click()
             cy.location("pathname").should("equal", "/testing-your-first-application/app-install-and-overview")
+            cy.getByData("challenge-answer-0").click()
+            cy.getByData("next-lesson-button").click()
+            
+
         })
         
 
